@@ -1,0 +1,7 @@
+.validation-error {
+    color: rgb(197, 38, 38);
+}
+
+input.ng-invalid.ng-touched{
+    border-color: rgb(197, 38, 38);
+}

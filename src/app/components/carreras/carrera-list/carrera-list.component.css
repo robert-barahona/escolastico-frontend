@@ -1,0 +1,7 @@
+tr td{
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: rgb(190, 235, 235);
+}

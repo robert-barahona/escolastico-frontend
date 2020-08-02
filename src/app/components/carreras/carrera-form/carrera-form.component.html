@@ -1,0 +1,24 @@
+<form #form="ngForm" autocomplete="off" (ngSubmit)="onSubmit(form)">
+    <div class="form-group">
+        <label>NOMBRE</label>
+        <input name="nombre" #nombre="ngModel" [(ngModel)]="service.selectedCarrera.nombre" class="form-control" required>
+        <div class="validation-error" *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)">Campo obligatorio</div>
+    </div>
+    <div class="form-group">
+        <label>CAMPUS</label>
+        <input name="campus" #campus="ngModel" [(ngModel)]="service.selectedCarrera.campus" class="form-control" required>
+        <div class="validation-error" *ngIf="campus.invalid && (campus.dirty || campus.touched)">Campo obligatorio</div>
+    </div>
+    <div class="form-group">
+        <label>TITULO</label>
+        <input name="titulo" #titulo="ngModel" [(ngModel)]="service.selectedCarrera.titulo" class="form-control" required>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="submit" [disabled]="form.invalid" class="btn btn-info btn-lg btn-block">Guardar</button>
+        </div>
+        <div class="col-sm-6">
+            <button type="button" (click)="resetButton(form)" class="btn btn-secondary btn-lg btn-block">Nuevo</button>
+        </div>
+    </div>
+</form>
