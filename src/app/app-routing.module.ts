@@ -4,8 +4,8 @@ import { AlumnoMainComponent } from './components/alumno-main/alumno-main.compon
 import { AlumnoCardComponent } from './components/alumno-card/alumno-card.component';
 import { MateriaFormComponent } from './components/materia-form/materia-form.component';
 import { MatriculaFormComponent } from './components/matricula-form/matricula-form.component';
-import { CarrerasComponent } from './components/carreras/carreras.component';
-import { CarreraCardComponent } from './components/carreras/carrera-card/carrera-card.component';
+import { ClubesComponent } from './components/clubes/clubes.component';
+import { ClubCardComponent } from './components/clubes/club-card/club-card.component';
 
 
 const routes: Routes = [
@@ -15,8 +15,8 @@ const routes: Routes = [
   {path: 'materias', component: MateriaFormComponent},
   {path: 'materias/:id', component: MateriaFormComponent},
   {path: 'matriculas', component: MatriculaFormComponent},
-  {path: 'carreras', component: CarrerasComponent},
-  {path: 'carreras/:id', component: CarreraCardComponent}
+  {path: 'clubs', component: ClubesComponent},
+  {path: 'clubs/:id', component: ClubCardComponent}
 ];
 
 @NgModule({

@@ -21,10 +21,10 @@ import { MasmasPipe } from './shared/pipes/masmas.pipe';
 import { SexdescPipe } from './shared/pipes/sexdesc.pipe';
 import { MateriaFormComponent } from './components/materia-form/materia-form.component';
 import { MatriculaFormComponent } from './components/matricula-form/matricula-form.component';
-import { CarrerasComponent } from './components/carreras/carreras.component';
-import { CarreraFormComponent } from './components/carreras/carrera-form/carrera-form.component';
-import { CarreraListComponent } from './components/carreras/carrera-list/carrera-list.component';
-import { CarreraCardComponent } from './components/carreras/carrera-card/carrera-card.component';
+import { ClubesComponent } from './components/clubes/clubes.component';
+import { ClubFormComponent } from './components/clubes/club-form/club-form.component';
+import { ClubListComponent } from './components/clubes/club-list/club-list.component';
+import { ClubCardComponent } from './components/clubes/club-card/club-card.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +37,10 @@ import { CarreraCardComponent } from './components/carreras/carrera-card/carrera
     SexdescPipe,
     MateriaFormComponent,
     MatriculaFormComponent,
-    CarrerasComponent,
-    CarreraFormComponent,
-    CarreraListComponent,
-    CarreraCardComponent  
+    ClubesComponent,
+    ClubFormComponent,
+    ClubListComponent,
+    ClubCardComponent  
   ],
   imports: [
     BrowserModule,

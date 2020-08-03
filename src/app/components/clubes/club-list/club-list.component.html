@@ -1,0 +1,30 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                NOMBRE
+            </th>
+            <th>
+                CAMPUS
+            </th>  
+            <th>
+                LIDER
+            </th>        
+            <th></th>
+        </tr>
+    </thead>
+    <tr *ngFor="let club of service.list_clubs" style="cursor: default;">
+        <td (click)="editClub(club)">{{club.id_club}}</td>
+        <td (click)="editClub(club)">{{club.nombre}}</td>
+        <td (click)="editClub(club)">{{club.campus}}</td>
+        <td (click)="editClub(club)">{{club.lider}}</td>
+        <td>
+            <button [routerLink]="['/clubs', club.id_club]" class="btn btn-sm btn-info" ><fa-icon [icon]="faEye"></fa-icon></button>
+            <button (click)="editClub(club)" class="btn btn-sm btn-warning" ><fa-icon [icon]="faPencilAlt"></fa-icon></button>
+            <button (click)="onDelete(club)" class="btn btn-sm btn-danger" ><fa-icon [icon]="faTrash"></fa-icon></button>
+        </td>
+    </tr>
+</table>
